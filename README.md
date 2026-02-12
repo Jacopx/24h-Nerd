@@ -60,6 +60,11 @@ The network is segmented into four VLANs:
 | Download | 300 Mbps  |
 | Upload   | 50 Mbps   |
 
+One of the best speedtest without client was:
+![Best speedtest](/speedtest.png)
+
+TO BE UPDATE
+
 The ports on the router itself are assigned as follows:
 
 | Port   | Name              | VLAN TAG |
