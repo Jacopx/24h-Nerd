@@ -26,24 +26,17 @@ The main room is divided into two areas:
 
 Each area is served by a large managed switch acting as the primary collector. Smaller unmanaged switches may be used to reduce cable lengths where necessary.
 
-Devices used in this setup:
-* **MikroTik hEXs 2025**: Gateway, router, firewall, QoS, DHCP
-* **MikroTik CSS326-24G-2S+RM**: Managed core switch between router and main room, SFP+ 10G, VLAN support
-* **D-Link DGS-1210-24**: Managed 24-port switch for the COMPUTER area (VLAN 11)
-* **D-Link DGS-1100-16**: Managed 16-port switch for the CONSOLE area (VLAN 12)
-* **Zyxel GS1100-24E**: Unmanaged 24-port switch probably for the COMPUTER area (VLAN 11)
-* **Raspberry Pi 3 Model B Rev 1.2**: Pi-hole
+Devices used in this setup and its themed name:
+* **MikroTik hEXs 2025**: [*`Mordor`*] Gateway, router, firewall, QoS, DHCP
+* **MikroTik CSS326-24G-2S+RM**: [*`MiddleEarth`*] Managed core switch between router and main room, SFP+ 10G, VLAN support
+* **D-Link DGS-1210-24**: [*`Isengard`*] Managed 24-port switch for the COMPUTER area (VLAN 11)
+* **D-Link DGS-1100-16**: [*`Rohan`*] Managed 16-port switch for the CONSOLE area (VLAN 12)
+* **Zyxel GS1100-24E**: [*`Bree`*] Unmanaged 24-port switch probably for the COMPUTER area (VLAN 11)
+* **Raspberry Pi 3 Model B Rev 1.2**: [*`HelmsDeep`*] Pi-hole
+* **GL.iNet GL-MT3000 (Beryl AX)**: [*`MinasMorgul`*] Small travel router used for some wireless client like tablet or Nintendo Switch on OTHER (VLAN 13)
 * Additional unmanaged switches
 
 ## Software
-Each device is assigned a themed hostname:
-* **MikroTik hEXs 2025**: *`Mordor`*
-* **MikroTik CSS326-24G-2S+RM**: *`MiddleEarth`*
-* **D-Link DGS-1210-24**: *`Isengard`*
-* **D-Link DGS-1100-16**: *`Rohan`*
-* **Zyxel GS1100-24E**: *`Bree`*
-* **Raspberry Pi 3**: *`HelmsDeep`*
-
 All devices are managed via WinBox, web configuration interfaces, and SSH.
 
 The network is segmented into four VLANs:
@@ -85,6 +78,15 @@ The output of the [network_monitor.sh](/network_monitor.sh) script is the follow
   ─────────────────────────────────────────────────────────
   AVG         290.83       50.37       33.21        1.12
 ```
+Due to the nature of the network, it is essential to cap client bandwidth. Saturating either the uplink or downlink would severely degrade overall network quality. For this reason, QoS policies are enforced using the following queue tree structure:
+
+| Queue Group                | Download (Mbps) | Upload (Mbps) |
+|----------------------------|-----------------|---------------|
+| TOTAL                      | 280             | 40            |
+| TRUST / COMPUTER / CONSOLE | 275             | 35            |
+| OTHER                      | 100             | 10            |
+
+The queue type used is **PCQ**, ensuring fair bandwidth distribution among clients. This approach leaves sufficient headroom and minimizes disruptions.
 
 The ports on the router itself are assigned as follows:
 
@@ -100,16 +102,6 @@ The ports on the router itself are assigned as follows:
 Except for the SFP and WAN connections, no other devices should be directly linked to this router. We will evaluate on site whether to use Port5’s PoE capability to power the FWA Eolo antenna. 
 
 If a second WAN becomes available, a failover configuration using Port5 (deafult route with distance 1) and Port1 (deafult route with distance 2) will be implemented.
-
-Due to the nature of the network, it is essential to cap client bandwidth. Saturating either the uplink or downlink would severely degrade overall network quality. For this reason, QoS policies are enforced using the following queue tree structure:
-
-| Queue Group                | Download (Mbps) | Upload (Mbps) |
-|----------------------------|-----------------|---------------|
-| TOTAL                      | 280             | 40            |
-| TRUST / COMPUTER / CONSOLE | 275             | 35            |
-| OTHER                      | 100             | 10            |
-
-The queue type used is **PCQ**, ensuring fair bandwidth distribution among clients. This approach leaves sufficient headroom and minimizes disruptions.
 
 To enable a plug-and-play experience, each VLAN is served by its own DHCP server with a 2-day lease time, following this addressing plan:
 
