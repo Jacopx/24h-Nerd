@@ -1,3 +1,4 @@
 *.rsc
 *.swb
 *.backup
+.DS_Store
