@@ -65,15 +65,15 @@ The ports on the router itself are assigned as follows:
 | Port   | Name              | VLAN TAG |
 |--------|-------------------|----------|
 | SFP    | toMiddleEarth     | TRUNK    |
-| Port1  | WAN               | -        |
+| Port1  | WAN2              | -        |
 | Port2  | mgmt              | -        |
 | Port3  | TRUST             | 10       |
 | Port4  | trunk             | TRUNK    |
-| Port5  | WAN (PoE)         | -        |
+| Port5  | WAN1 (PoE)        | -        |
 
 Except for the SFP and WAN connections, no other devices should be directly linked to this router. We will evaluate on site whether to use Port5’s PoE capability to power the FWA Eolo antenna. 
 
-If a second WAN becomes available, a failover configuration using Port1 and Port5 will be implemented.
+If a second WAN becomes available, a failover configuration using Port5 (deafult route with distance 1) and Port1 (deafult route with distance 2) will be implemented.
 
 Due to the nature of the network, it is essential to cap client bandwidth. Saturating either the uplink or downlink would severely degrade overall network quality. For this reason, QoS policies are enforced using the following queue tree structure:
 
