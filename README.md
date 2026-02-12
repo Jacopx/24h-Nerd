@@ -60,10 +60,31 @@ The network is segmented into four VLANs:
 | Download | 300 Mbps  |
 | Upload   | 50 Mbps   |
 
-One of the best speedtest without client was:
-![Best speedtest](/speedtest.png)
+The output of the [network_monitor.sh](/network_monitor.sh) script is the following:
 
-TO BE UPDATE
+```
+╔══════════════════════════════════════════════════════╗
+║              FINAL SUMMARY (2 min run)              ║
+╚══════════════════════════════════════════════════════╝
+  Cycles completed : 3
+  Ended at         : Thu Feb 12 17:41:05 CET 2026
+
+── Ping (averages across all cycles) ───────────────────
+  TARGET             LOSS%    AVG ms    MIN ms    MAX ms    JITTER
+  ─────────────────────────────────────────────────────────
+  8.8.8.8             0.0%     21.97     12.66     40.50      5.70
+  1.1.1.1             0.0%     22.69     14.05     33.26      5.22
+  google.com          0.0%     21.95     12.87     33.10      5.26
+
+── Speedtest (per cycle + average) ─────────────────────
+   CYCLE   DOWN Mbps     UP Mbps     PING ms   JITTER ms
+  ─────────────────────────────────────────────────────────
+       1      299.16       50.53        29.9        1.77
+       2      293.69       50.45        29.9        0.22
+       3      279.64       50.13       39.83        1.39
+  ─────────────────────────────────────────────────────────
+  AVG         290.83       50.37       33.21        1.12
+```
 
 The ports on the router itself are assigned as follows:
 
