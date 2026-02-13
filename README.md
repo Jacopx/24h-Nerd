@@ -50,8 +50,8 @@ The network is segmented into four VLANs:
 
 | Type     | Speed     |
 |----------|:---------:|
-| Download | 300 Mbps  |
-| Upload   | 50 Mbps   |
+| Download | 100 Mbps  |
+| Upload   | 20 Mbps   |
 
 The output of the [network_monitor.sh](/network_monitor.sh) script is the following:
 
@@ -82,9 +82,8 @@ Due to the nature of the network, it is essential to cap client bandwidth. Satur
 
 | Queue Group                | Download (Mbps) | Upload (Mbps) |
 |----------------------------|-----------------|---------------|
-| TOTAL                      | 280             | 40            |
-| TRUST / COMPUTER / CONSOLE | 275             | 35            |
-| OTHER                      | 100             | 10            |
+| TRUST / COMPUTER / CONSOLE | 95              | 18            |
+| OTHER                      | 25              | 5             |
 
 The queue type used is **PCQ**, ensuring fair bandwidth distribution among clients. This approach leaves sufficient headroom and minimizes disruptions.
 
@@ -133,7 +132,7 @@ https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.plus.txt
                            |     hEX s     |
                            +-------+-------+
                                    |
-                             1G SFP TRUNK
+                              1G SFP 40m
                                    |
       +---------------------------------------------------------------+
       |                        [ MiddleEarth ]                        |
