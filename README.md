@@ -250,8 +250,11 @@ The web interface is available on the TRUST VLAN at [http://172.16.100.5](http:/
 
 The web interface is available on the TRUST VLAN at [http://172.16.100.4](http://172.16.100.4).
 
+## Gondor
+`Gondor` is a powerful managed switch with 2.5G and 10G links will not be configured until the day of the games, will be used ad a backup in case of failure of some of the others. 
+
 ## Bree
-`Bree` is an unmanaged switch so specs are needed, will be probably used within a COMPUTER port of `Isengard` to physically improve the cable connection.
+`Bree` is an unmanaged switch, will be probably used within a COMPUTER port of `Isengard` to physically improve the cables connection.
 
 ## Inventory
 All the material used in order to check:
