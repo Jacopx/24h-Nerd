@@ -3,7 +3,7 @@
 # Network documentation: 24h Nerd
 ![Static Badge](https://img.shields.io/badge/24h_Nerd-14th_Edition-brightgreen)
 ![Static Badge](https://img.shields.io/badge/Location-Pavignano,Biella-8A2BE2)
-![Static Badge](https://img.shields.io/badge/WAN-Eolo_300/50M-blue)
+![Static Badge](https://img.shields.io/badge/WAN-Eolo_100/20M-blue)
 
 ## Introduction
 This document is a consolidated reference for all information and configurations related to the network infrastructure used during the 24h NERD event. It has been maintained starting from the 2026 edition, which marks the 14th edition of the event.
@@ -31,6 +31,7 @@ Devices used in this setup and its themed name:
 * **MikroTik CSS326-24G-2S+RM**: [*`MiddleEarth`*] Managed core switch between router and main room, SFP+ 10G, VLAN support
 * **D-Link DGS-1210-24**: [*`Isengard`*] Managed 24-port switch for the COMPUTER area (VLAN 11)
 * **D-Link DGS-1100-16**: [*`Rohan`*] Managed 16-port switch for the CONSOLE area (VLAN 12)
+* **Zyxel XGS1210-12**: [*`Gondor`*] Managed 12-port Multi-Gig (2.5G) switch with 10G uplinks as backup.
 * **Zyxel GS1100-24E**: [*`Bree`*] Unmanaged 24-port switch probably for the COMPUTER area (VLAN 11)
 * **Raspberry Pi 3 Model B Rev 1.2**: [*`HelmsDeep`*] Pi-hole
 * **GL.iNet GL-MT3000 (Beryl AX)**: [*`MinasMorgul`*] Small travel router used for some wireless client like tablet or Nintendo Switch on OTHER (VLAN 13)
@@ -254,19 +255,25 @@ The web interface is available on the TRUST VLAN at [http://172.16.100.4](http:/
 
 ## Inventory
 All the material used in order to check:
-- [ ] MikroTik hEXs
-- [ ] MikroTik CSS
-- [ ] D-Link DGS-1210
-- [ ] D-Link DGS-1100
-- [ ] Zyxel GS1100
-- [ ] 2x SFP LC module
-- [ ] 40m LC Cable
-- [ ] Raspberry Pi3
-- [ ] GL-iNet
+- [X] MikroTik hEXs
+- [X] MikroTik CSS
+- [X] D-Link DGS-1210
+- [X] D-Link DGS-1100
+- [X] Zyxel GS1100
+- [X] Zyxel XGS1210-12
+- [X] 2x SFP LC module
+- [X] 40m LC Cable
+- [X] Raspberry Pi3
+- [X] GL-iNet
+
 - [ ] Power socket
-- [ ] 30m Red RJ45 ethernet cable
-- [ ] 2x 10m Blue RJ45 ethernet cable
-- [ ] 2x 0.3m black RJ45 ethernet cable
+- [X] 1x 30m Red RJ45 CAT.6 ethernet cable
+- [X] 1x 20m Red RJ45 CAT.6 ethernet cable
+- [X] 2x 15m Red RJ45 CAT.6 ethernet cable
+- [X] 2x 10m Orange RJ45 CAT.5e ethernet cable
+- [X] 1x 5m Blue RJ45 CAT.6 ethernet cable
+- [X] 2x 0.3m black RJ45 CAT.6 ethernet cable
+- [X] Various short-medium-long ethernet cables
 
 ## Backup
 ```
