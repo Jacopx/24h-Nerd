@@ -34,6 +34,7 @@ Devices used in this setup and its themed name:
 * **Zyxel XGS1210-12**: [*`Gondor`*] Managed 12-port Multi-Gig (2.5G) switch with 10G uplinks as backup.
 * **Zyxel GS1100-24E**: [*`Bree`*] Unmanaged 24-port switch probably for the COMPUTER area (VLAN 11)
 * **Raspberry Pi 3 Model B Rev 1.2**: [*`HelmsDeep`*] Pi-hole
+* **MikroTik wAP AX**: [*`MinasTirith`*] Access point for wireless clients in case of necessity, will replace the next one after the configuration updates 
 * **GL.iNet GL-MT3000 (Beryl AX)**: [*`MinasMorgul`*] Small travel router used for some wireless client like tablet or Nintendo Switch on OTHER (VLAN 13)
 * Additional unmanaged switches
 
