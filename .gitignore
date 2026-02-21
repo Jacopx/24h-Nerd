@@ -2,3 +2,4 @@
 *.swb
 *.backup
 .DS_Store
+*.bin

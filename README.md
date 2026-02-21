@@ -59,26 +59,39 @@ The output of the [network_monitor.sh](/network_monitor.sh) script is the follow
 
 ```
 ╔══════════════════════════════════════════════════════╗
-║              FINAL SUMMARY (2 min run)              ║
+║              FINAL SUMMARY (15 min run)              ║
 ╚══════════════════════════════════════════════════════╝
-  Cycles completed : 3
-  Ended at         : Thu Feb 12 17:41:05 CET 2026
+  Cycles completed : 16
+  Ended at         : Sat Feb 21 12:10:19 CET 2026
 
 ── Ping (averages across all cycles) ───────────────────
   TARGET             LOSS%    AVG ms    MIN ms    MAX ms    JITTER
   ─────────────────────────────────────────────────────────
-  8.8.8.8             0.0%     21.97     12.66     40.50      5.70
-  1.1.1.1             0.0%     22.69     14.05     33.26      5.22
-  google.com          0.0%     21.95     12.87     33.10      5.26
+  8.8.8.8             0.0%     12.90      8.12     22.32      3.02
+  1.1.1.1             0.0%     18.47     13.08     26.23      2.73
+  google.it           0.0%     12.78      7.93     19.93      2.89
 
 ── Speedtest (per cycle + average) ─────────────────────
    CYCLE   DOWN Mbps     UP Mbps     PING ms   JITTER ms
   ─────────────────────────────────────────────────────────
-       1      299.16       50.53        29.9        1.77
-       2      293.69       50.45        29.9        0.22
-       3      279.64       50.13       39.83        1.39
+       1       92.08       17.24       14.74        5.48
+       2       91.54       17.34       11.07        4.56
+       3       91.29       17.48       11.82        5.23
+       4       92.36       17.18       15.02        4.65
+       5       89.97       17.22       14.52        4.76
+       6       89.79       17.25       14.31        3.64
+       7       90.58       17.17       12.33        2.96
+       8       89.64       17.24       17.02        5.03
+       9       90.57       17.16       14.48         6.2
+      10       90.79       17.16       13.91        4.04
+      11       91.12       17.31       11.18        2.68
+      12       91.89       17.25       14.21        6.48
+      13       90.27       17.23       11.57        4.08
+      14       90.38       17.25       12.06        4.76
+      15       90.43       17.17       14.73        6.56
+      16        85.6       17.32       12.47        2.62
   ─────────────────────────────────────────────────────────
-  AVG         290.83       50.37       33.21        1.12
+  AVG          90.51       17.24       13.46        4.60
 ```
 Due to the nature of the network, it is essential to cap client bandwidth. Saturating either the uplink or downlink would severely degrade overall network quality. For this reason, QoS policies are enforced using the following queue tree structure:
 
@@ -226,6 +239,7 @@ The web interface is available on the TRUST VLAN at [http://172.16.100.6](http:/
 | Port28 | TRUNK SFP        | TRUNK    |
 
 The web interface is available on the TRUST VLAN at [http://172.16.100.5](http://172.16.100.5).
+Remember that the DHCP configuration is working only during the startup of the switch.
 
 ### Rohan
 `Rohan` serves the CONSOLE area and is a D-Link DGS-1110-16. Ports are available for CONSOLE and OTHER VLANs only.
@@ -250,6 +264,7 @@ The web interface is available on the TRUST VLAN at [http://172.16.100.5](http:/
 | Port16 | OTHER            | 13       |
 
 The web interface is available on the TRUST VLAN at [http://172.16.100.4](http://172.16.100.4).
+Remember that the DHCP configuration is working only during the startup of the switch.
 
 ## Gondor
 `Gondor` is a powerful managed switch with 2.5G and 10G links will not be configured until the day of the games, will be used ad a backup in case of failure of some of the others. 
