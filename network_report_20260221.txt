@@ -1,0 +1,228 @@
+============================================================
+  Network Monitor — macOS
+  Started : Sat Feb 21 11:55:11 CET 2026
+  Running : ping + speedtest every ~60s for 15 min
+  Targets : 8.8.8.8 1.1.1.1 google.it
+  Server  : Speedtest ID 3667
+  Log     : /Users/jacopx/network_diagnostics/network_report_20260221_115511.txt
+============================================================
+
+Interface:
+  	ether 00:e0:4c:68:00:ac
+  	inet 172.16.100.3 netmask 0xfffffff8 broadcast 172.16.100.7
+  	media: autoselect (1000baseT <full-duplex>)
+  	status: active
+
+Gateway:   172.16.100.1
+DNS:       172.16.100.1 
+Public IP: 49.236.42.172
+
+┌─ Cycle 1  11:55:12  15m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.325  avg=12.798  max=19.498  jitter=3.433 ms
+  1.1.1.1          loss=0.0%  min=14.502  avg=18.834  max=24.538  jitter=2.818 ms
+  google.it        loss=0.0%  min=8.107  avg=12.829  max=17.369  jitter=2.567 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 92.08 Mbps  ↑ 17.24 Mbps   ping=14.74 ms  jitter=5.48 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 27s …
+┌─ Cycle 2  11:56:12  14m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.283  avg=13.881  max=18.645  jitter=3.180 ms
+  1.1.1.1          loss=0.0%  min=14.709  avg=18.640  max=24.000  jitter=2.705 ms
+  google.it        loss=0.0%  min=8.332  avg=12.407  max=18.292  jitter=2.307 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 91.54 Mbps  ↑ 17.34 Mbps   ping=11.07 ms  jitter=4.56 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 31s …
+┌─ Cycle 3  11:57:12  13m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=9.028  avg=13.582  max=18.668  jitter=3.454 ms
+  1.1.1.1          loss=0.0%  min=14.009  avg=18.075  max=25.484  jitter=2.964 ms
+  google.it        loss=0.0%  min=8.123  avg=13.301  max=18.886  jitter=3.407 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 91.29 Mbps  ↑ 17.48 Mbps   ping=11.82 ms  jitter=5.23 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 29s …
+┌─ Cycle 4  11:58:12  12m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.447  avg=12.734  max=17.760  jitter=2.726 ms
+  1.1.1.1          loss=0.0%  min=13.676  avg=18.325  max=23.363  jitter=2.813 ms
+  google.it        loss=0.0%  min=8.884  avg=13.769  max=18.672  jitter=3.631 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 92.36 Mbps  ↑ 17.18 Mbps   ping=15.02 ms  jitter=4.65 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 30s …
+┌─ Cycle 5  11:59:12  11m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.274  avg=12.133  max=18.739  jitter=2.537 ms
+  1.1.1.1          loss=0.0%  min=13.765  avg=18.287  max=24.607  jitter=2.923 ms
+  google.it        loss=0.0%  min=8.961  avg=13.037  max=18.563  jitter=2.672 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 89.97 Mbps  ↑ 17.22 Mbps   ping=14.52 ms  jitter=4.76 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 27s …
+┌─ Cycle 6  12:00:12  10m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.224  avg=12.798  max=20.436  jitter=3.370 ms
+  1.1.1.1          loss=0.0%  min=14.196  avg=17.516  max=23.819  jitter=2.287 ms
+  google.it        loss=0.0%  min=8.802  avg=12.907  max=18.344  jitter=2.815 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 89.79 Mbps  ↑ 17.25 Mbps   ping=14.31 ms  jitter=3.64 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 24s …
+┌─ Cycle 7  12:01:12  9m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.261  avg=13.200  max=19.308  jitter=3.372 ms
+  1.1.1.1          loss=0.0%  min=15.219  avg=18.529  max=23.126  jitter=2.271 ms
+  google.it        loss=0.0%  min=8.317  avg=13.847  max=18.650  jitter=3.526 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.58 Mbps  ↑ 17.17 Mbps   ping=12.33 ms  jitter=2.96 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 22s …
+┌─ Cycle 8  12:02:12  8m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.777  avg=12.495  max=18.107  jitter=2.282 ms
+  1.1.1.1          loss=0.0%  min=15.445  avg=18.520  max=22.114  jitter=2.019 ms
+  google.it        loss=0.0%  min=9.201  avg=11.957  max=17.314  jitter=2.125 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 89.64 Mbps  ↑ 17.24 Mbps   ping=17.02 ms  jitter=5.03 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 29s …
+┌─ Cycle 9  12:03:12  7m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.648  avg=12.746  max=19.314  jitter=3.438 ms
+  1.1.1.1          loss=0.0%  min=14.418  avg=19.384  max=25.648  jitter=3.169 ms
+  google.it        loss=0.0%  min=8.094  avg=12.294  max=19.935  jitter=3.304 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.57 Mbps  ↑ 17.16 Mbps   ping=14.48 ms  jitter=6.2 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 25s …
+┌─ Cycle 10  12:04:12  6m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.362  avg=13.578  max=19.663  jitter=3.096 ms
+  1.1.1.1          loss=0.0%  min=14.772  avg=17.937  max=24.218  jitter=2.801 ms
+  google.it        loss=0.0%  min=7.933  avg=11.702  max=18.265  jitter=3.133 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.79 Mbps  ↑ 17.16 Mbps   ping=13.91 ms  jitter=4.04 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 27s …
+┌─ Cycle 11  12:05:12  5m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.971  avg=13.606  max=21.824  jitter=2.840 ms
+  1.1.1.1          loss=0.0%  min=14.173  avg=18.308  max=23.581  jitter=2.993 ms
+  google.it        loss=0.0%  min=8.897  avg=12.393  max=16.915  jitter=2.286 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 91.12 Mbps  ↑ 17.31 Mbps   ping=11.18 ms  jitter=2.68 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 25s …
+┌─ Cycle 12  12:06:12  4m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.325  avg=12.495  max=22.319  jitter=2.991 ms
+  1.1.1.1          loss=0.0%  min=14.405  avg=19.794  max=23.344  jitter=2.146 ms
+  google.it        loss=0.0%  min=8.945  avg=12.608  max=17.379  jitter=2.731 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 91.89 Mbps  ↑ 17.25 Mbps   ping=14.21 ms  jitter=6.48 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 20s …
+┌─ Cycle 13  12:07:12  3m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.589  avg=12.282  max=19.293  jitter=3.404 ms
+  1.1.1.1          loss=0.0%  min=14.197  avg=18.764  max=26.230  jitter=3.392 ms
+  google.it        loss=0.0%  min=7.935  avg=13.379  max=19.473  jitter=3.239 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.27 Mbps  ↑ 17.23 Mbps   ping=11.57 ms  jitter=4.08 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 30s …
+┌─ Cycle 14  12:08:12  2m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.338  avg=12.233  max=18.487  jitter=2.939 ms
+  1.1.1.1          loss=0.0%  min=13.759  avg=16.664  max=20.420  jitter=1.765 ms
+  google.it        loss=0.0%  min=8.633  avg=12.866  max=18.119  jitter=2.841 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.38 Mbps  ↑ 17.25 Mbps   ping=12.06 ms  jitter=4.76 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+  ⏳ next cycle in 24s …
+┌─ Cycle 15  12:09:12  1m0s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=10.215  avg=13.654  max=18.822  jitter=2.282 ms
+  1.1.1.1          loss=0.0%  min=13.077  avg=18.630  max=24.225  jitter=3.140 ms
+  google.it        loss=0.0%  min=8.286  avg=12.459  max=19.360  jitter=3.106 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 90.43 Mbps  ↑ 17.17 Mbps   ping=14.73 ms  jitter=6.56 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+┌─ Cycle 16  12:09:41  0m31s remaining ───────────────────
+  Ping:
+  8.8.8.8          loss=0.0%  min=8.120  avg=12.186  max=19.365  jitter=3.038 ms
+  1.1.1.1          loss=0.0%  min=14.151  avg=19.281  max=24.899  jitter=3.532 ms
+  google.it        loss=0.0%  min=8.211  avg=12.650  max=17.589  jitter=2.571 ms
+  Speed:
+  Running speedtest (server 3667) …
+  ↓ 85.6 Mbps  ↑ 17.32 Mbps   ping=12.47 ms  jitter=2.62 ms  (TIM SpA, Milan)
+└──────────────────────────────────────────────────────
+
+
+╔══════════════════════════════════════════════════════╗
+║              FINAL SUMMARY (15 min run)              ║
+╚══════════════════════════════════════════════════════╝
+  Cycles completed : 16
+  Ended at         : Sat Feb 21 12:10:19 CET 2026
+
+── Ping (averages across all cycles) ───────────────────
+  TARGET             LOSS%    AVG ms    MIN ms    MAX ms    JITTER
+  ─────────────────────────────────────────────────────────
+  8.8.8.8             0.0%     12.90      8.12     22.32      3.02
+  1.1.1.1             0.0%     18.47     13.08     26.23      2.73
+  google.it           0.0%     12.78      7.93     19.93      2.89
+
+── Speedtest (per cycle + average) ─────────────────────
+   CYCLE   DOWN Mbps     UP Mbps     PING ms   JITTER ms
+  ─────────────────────────────────────────────────────────
+       1       92.08       17.24       14.74        5.48
+       2       91.54       17.34       11.07        4.56
+       3       91.29       17.48       11.82        5.23
+       4       92.36       17.18       15.02        4.65
+       5       89.97       17.22       14.52        4.76
+       6       89.79       17.25       14.31        3.64
+       7       90.58       17.17       12.33        2.96
+       8       89.64       17.24       17.02        5.03
+       9       90.57       17.16       14.48         6.2
+      10       90.79       17.16       13.91        4.04
+      11       91.12       17.31       11.18        2.68
+      12       91.89       17.25       14.21        6.48
+      13       90.27       17.23       11.57        4.08
+      14       90.38       17.25       12.06        4.76
+      15       90.43       17.17       14.73        6.56
+      16        85.6       17.32       12.47        2.62
+  ─────────────────────────────────────────────────────────
+  AVG          90.51       17.24       13.46        4.60
