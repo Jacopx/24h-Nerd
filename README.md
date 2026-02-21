@@ -1,4 +1,4 @@
-![24h Nerd - 14th Edition - 2026](/24h-nerd-14thEdition.png "24h logo")
+![24h Nerd - 14th Edition - 2026](/24h-nerd-latest.png "24h logo")
 
 # Network documentation: 24h Nerd
 ![Static Badge](https://img.shields.io/badge/24h_Nerd-14th_Edition-brightgreen)
@@ -55,7 +55,7 @@ The network is segmented into four VLANs:
 | Download | 100 Mbps  |
 | Upload   | 20 Mbps   |
 
-The output of the [network_monitor.sh](/network_monitor.sh) script is the following:
+The output of the [network_monitor.sh](/script/network_monitor.sh) script is the following:
 
 ```
 ╔══════════════════════════════════════════════════════╗
